@@ -14,7 +14,7 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons/faCartShopping
 
 const Header = () => {
   return (
-    <Navbar>
+    <Navbar className="shadow-xl">
       <NavbarBrand>
         <p className="font-bold text-inherit">TNT</p>
       </NavbarBrand>
