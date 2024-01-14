@@ -12,9 +12,13 @@ const DetailPage = () => {
           <Slide />
           <Options />
         </div>
-        <div className="grid grid-cols-2 gap-20">
-          <Description />
-          <Specifications />
+        <div className="grid grid-cols-5 gap-20">
+          <div className="col-span-3">
+            <Description />
+          </div>
+          <div className="col-span-2">
+            <Specifications />
+          </div>
         </div>
       </div>
     </>

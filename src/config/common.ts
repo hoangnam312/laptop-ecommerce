@@ -1,5 +1,11 @@
 import { faApple } from "@fortawesome/free-brands-svg-icons";
-import { faBriefcase, faFeather, faGamepad, faHeadphonesSimple, faPalette } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBriefcase,
+  faFeather,
+  faGamepad,
+  faHeadphonesSimple,
+  faPalette,
+} from "@fortawesome/free-solid-svg-icons";
 
 export enum ENUM_CATEGORY {
   GRAPHIC = "graphic",
@@ -34,5 +40,9 @@ export const CATEGORIES = [
   {
     title: "Phụ kiện",
     icon: faHeadphonesSimple,
-  }
+  },
 ];
+
+export const INFORMATION = {
+  phone: "0123456789",
+};
