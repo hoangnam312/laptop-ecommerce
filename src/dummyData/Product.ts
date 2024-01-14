@@ -251,3 +251,8 @@ export const optionSpecification = [
     value: "12 tháng",
   },
 ];
+
+export const productOnCart = [
+  { id: 1, name: "Product 1", price: 1000000, quantity: 2, image: "https://surfacecity.vn/wp-content/uploads/Surface-Pro-8-key-i7-500x500.jpg" },
+  { id: 2, name: "Product 2", price: 1500000, quantity: 1, image: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/PDP-Highlight-Consumer-Laptop-5-Platinum-001-1:VP1-539x440" },
+];
