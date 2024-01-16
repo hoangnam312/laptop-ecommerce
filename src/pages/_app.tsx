@@ -13,8 +13,7 @@ const App = ({ Component, pageProps }: AppProps) => (
     <Layout>
       <Component {...pageProps} />
     </Layout>
-    <ToastContainer
-    closeOnClick />
+    <ToastContainer closeOnClick />
   </NextUIProvider>
 );
 
