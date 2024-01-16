@@ -1,8 +1,10 @@
 import React from "react";
-import ListCategory from "./ListCategory";
-import ListProduct from "./ListProducts";
-import ListAfterMarket from "./ListAfterMarket";
+
 import { outstandingProducts } from "@/dummyData/Product";
+
+import ListProduct from "./ListProducts";
+import ListCategory from "./ListCategory";
+import ListAfterMarket from "./ListAfterMarket";
 
 const HomePage = () => {
   return (
@@ -16,17 +18,17 @@ const HomePage = () => {
         <ListCategory />
         <ListProduct
           title="Sản phẩm nổi bật"
-          link="/hot"
+          link="/category/hot"
           listOfProduct={outstandingProducts}
         />
         <ListProduct
           title="Sản phẩm mới"
-          link="/hot"
+          link="/category/new"
           listOfProduct={outstandingProducts}
         />
         <ListProduct
           title="Sản phẩm đề xuất"
-          link="/hot"
+          link="/category/suggest"
           listOfProduct={outstandingProducts}
         />
         <ListAfterMarket />

@@ -1,10 +1,15 @@
-import { INFORMATION } from "@/config/common";
-import { optionColor, optionProduct } from "@/dummyData/Product";
-import { faCartPlus, faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { INFORMATION, PATH } from "@/config/common";
+import { toast } from "react-toastify";
+
+import { useRouter } from "next/router";
 import { Button } from "@nextui-org/react";
+import { optionColor, optionProduct } from "@/dummyData/Product";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartPlus, faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
 
 const Options = () => {
+  const router = useRouter();
+
   return (
     <div>
       <div className="grid grid-cols-3 gap-4">
@@ -26,7 +31,12 @@ const Options = () => {
       </div>
       <div className="mt-8">
         <div className="grid grid-cols-2 gap-4">
-          <Button color="primary" size="lg" className="h-16">
+          <Button
+            color="primary"
+            size="lg"
+            className="h-16"
+            onClick={() => router.push(PATH.ORDER)}
+          >
             <div className="flex flex-col align-center">
               <div className="font-bold text-xl">Mua ngay</div>
               <div className="text-sm">
@@ -39,7 +49,12 @@ const Options = () => {
               </div>
             </div>
           </Button>
-          <Button color="primary" variant="bordered" className="h-16 text-lg">
+          <Button
+            color="primary"
+            variant="bordered"
+            className="h-16 text-lg"
+            onClick={() => toast.success("Thêm vào giỏ hàng thành công")}
+          >
             Thêm vào giỏ hàng
             <FontAwesomeIcon icon={faCartPlus} />
           </Button>

@@ -1,27 +1,40 @@
+import { PATH } from "@/config/common";
+import { useRouter } from "next/router";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhoneFlip } from "@fortawesome/free-solid-svg-icons/faPhoneFlip";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons/faCartShopping";
 import {
+  Badge,
+  Button,
+  Input,
+  Link,
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
-  Button,
-  Input,
-  Badge,
 } from "@nextui-org/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhoneFlip } from "@fortawesome/free-solid-svg-icons/faPhoneFlip";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons/faCartShopping";
 
 const Header = () => {
+  const router = useRouter();
+
   return (
     <Navbar className="shadow-xl">
       <NavbarBrand>
-        <p className="font-bold text-inherit">TNT</p>
+        <p
+          className="font-bold text-inherit cursor-pointer"
+          onClick={() => router.push(PATH.HOME)}
+        >
+          TNT
+        </p>
       </NavbarBrand>
       <NavbarContent className="flex gap-4" justify="center">
         {/* input search */}
         <NavbarItem>
-          <Input className="w-80" labelPlacement="inside" placeholder="Bạn cần tìm gì" />
+          <Input
+            className="w-80"
+            labelPlacement="inside"
+            placeholder="Bạn cần tìm gì"
+          />
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
@@ -34,14 +47,14 @@ const Header = () => {
         </NavbarItem>
         {/* cart */}
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="ghost">
+          <Button as={Link} color="primary" href={PATH.CART} variant="ghost">
             <Badge content="5" size="sm" color="primary">
               <FontAwesomeIcon icon={faCartShopping} />
             </Badge>
           </Button>
         </NavbarItem>
         <NavbarItem>
-        {/* account */}
+          {/* account */}
           <Button as={Link} color="primary" href="#" variant="ghost">
             Account
           </Button>
@@ -51,4 +64,4 @@ const Header = () => {
   );
 };
 
-export default Header
+export default Header;

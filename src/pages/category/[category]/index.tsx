@@ -1,7 +1,6 @@
+import { useRouter } from "next/router";
 import ListPage from "@/component/ListPage";
 import { ENUM_CATEGORY } from "@/config/common";
-import { useRouter } from "next/router";
-import React from "react";
 
 const ListScreen = () => {
   const router = useRouter();
@@ -21,9 +20,9 @@ const ListScreen = () => {
       case ENUM_CATEGORY.ACCESSORIES:
         return "Phụ kiện laptop";
       default:
-        return "";
+        return "Sản phẩm";
     }
-  }
+  };
 
   return (
     <div className="my-20 flex items-center justify-center">

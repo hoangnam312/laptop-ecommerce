@@ -1,14 +1,16 @@
 import React, { useState } from "react";
+
+import { listProducts } from "@/dummyData/Product";
 import {
-  Dropdown,
-  DropdownTrigger,
-  DropdownMenu,
-  DropdownItem,
   Button,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownTrigger,
   Pagination,
 } from "@nextui-org/react";
+
 import { ENUM_SORT } from ".";
-import { listProducts } from "@/dummyData/Product";
 import Product from "../common/Product";
 
 const ListPage = () => {
@@ -67,6 +69,7 @@ const ListPage = () => {
           {listProducts.map((product) => (
             <Product
               key={product.id}
+              id={product.id}
               name={product.name}
               price={product.price}
               image={product.image}

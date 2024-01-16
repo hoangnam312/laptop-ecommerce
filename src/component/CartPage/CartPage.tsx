@@ -12,6 +12,8 @@ import {
   TableHeader,
   TableRow,
 } from "@nextui-org/react";
+import { PATH } from "@/config/common";
+import { useRouter } from "next/router";
 
 export interface CartType {
   id: number;
@@ -22,6 +24,7 @@ export interface CartType {
 }
 
 const CartPage = () => {
+  const router = useRouter();
   const [cart, setCart] = useState<CartType[]>([]);
 
   useEffect(() => {
@@ -56,6 +59,7 @@ const CartPage = () => {
 
   const handleContinue = () => {
     // !TODO: chuyển sang màn order
+    router.push(PATH.ORDER)
   };
 
   const getCount = () => {

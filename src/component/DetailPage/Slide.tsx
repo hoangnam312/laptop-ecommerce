@@ -1,7 +1,9 @@
-import { slideProducts } from "@/dummyData/Product";
-import { Image } from "@nextui-org/react";
 import { CSSProperties } from "react";
+
 import { Carousel } from "react-responsive-carousel";
+
+import { Image } from "@nextui-org/react";
+import { slideProducts } from "@/dummyData/Product";
 
 const getConfigurableProps = () => ({
   showArrows: true,
@@ -41,40 +43,13 @@ const ImgSlider = ({ url, name }: { url: string; name: string }) => (
 const Slide = () => {
   return (
     <div className="bg-blue-100">
-      <Carousel
-        {...getConfigurableProps()}
-        // renderThumbs={(children) => console.log(children)}
-        // autoPlay
-        // renderIndicator={(onClickHandler, isSelected, index) => {
-        //   if (isSelected) {
-        //     return (
-        //       <li
-        //         style={{ ...indicatorStyles, background: "#000" }}
-        //         // aria-label={`Selected: ${label} ${index + 1}`}
-        //         // title={`Selected: ${label} ${index + 1}`}
-        //       />
-        //     );
-        //   }
-        //   return (
-        //     <li
-        //       style={indicatorStyles}
-        //       onClick={onClickHandler}
-        //       onKeyDown={onClickHandler}
-        //       value={index}
-        //       key={index}
-        //       role="button"
-        //       tabIndex={0}
-        //       // title={`${label} ${index + 1}`}
-        //       // aria-label={`${label} ${index + 1}`}
-        //     />
-        //   );
-        // }}
-      >
+      <Carousel {...getConfigurableProps()}>
         {slideProducts.map((slide, index) => (
           <div key={index}>
             {/* <Image src={slide.image} alt={slide.name} height={"160px"} width="100%" /> */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={slide.image} alt={slide.name} />
-          </div>  
+          </div>
         ))}
       </Carousel>
     </div>

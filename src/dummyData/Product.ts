@@ -113,24 +113,37 @@ export const slideProducts = [
   {
     id: 1,
     image:
-      "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:0/q:80/plain/https://cellphones.com.vn/media/wysiwyg/laptop/laptop-1.jpg",
+      "https://cdn.sforum.vn/sforum/wp-content/uploads/2022/11/Microsoft-Surface-Laptop-5-1.jpg",
     name: "Máy tính 1",
   },
   {
     id: 2,
     image:
-      "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/PDP-Highlight-Consumer-Laptop-5-Platinum-001-1:VP1-539x440",
+      "https://cdn.sforum.vn/sforum/wp-content/uploads/2022/11/Microsoft-Surface-Laptop-5-10.jpg",
     name: "Máy tính 2",
   },
   {
     id: 3,
-    image: "https://vi.ie/wp-content/uploads/2021/01/LAASU-X512DA-hg.jpg",
+    image:
+      "https://cdn.sforum.vn/sforum/wp-content/uploads/2022/11/Microsoft-Surface-Laptop-5-14.jpg",
     name: "Máy tính 3",
   },
   {
     id: 4,
     image:
-      "https://surfacecity.vn/wp-content/uploads/Surface-Pro-8-key-i7-500x500.jpg",
+      "https://cdn.sforum.vn/sforum/wp-content/uploads/2022/11/Microsoft-Surface-Laptop-5-17.jpg",
+    name: "Máy tính 4",
+  },
+  {
+    id: 5,
+    image:
+      "https://cdn.sforum.vn/sforum/wp-content/uploads/2022/11/Microsoft-Surface-Laptop-5-13.jpg",
+    name: "Máy tính 4",
+  },
+  {
+    id: 6,
+    image:
+      "https://cdn.sforum.vn/sforum/wp-content/uploads/2022/11/Microsoft-Surface-Laptop-5-4.jpg",
     name: "Máy tính 4",
   },
 ];
@@ -253,6 +266,20 @@ export const optionSpecification = [
 ];
 
 export const productOnCart = [
-  { id: 1, name: "Product 1", price: 1000000, quantity: 2, image: "https://surfacecity.vn/wp-content/uploads/Surface-Pro-8-key-i7-500x500.jpg" },
-  { id: 2, name: "Product 2", price: 1500000, quantity: 1, image: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/PDP-Highlight-Consumer-Laptop-5-Platinum-001-1:VP1-539x440" },
+  {
+    id: 1,
+    name: "Product 1",
+    price: 1000000,
+    quantity: 2,
+    image:
+      "https://surfacecity.vn/wp-content/uploads/Surface-Pro-8-key-i7-500x500.jpg",
+  },
+  {
+    id: 2,
+    name: "Product 2",
+    price: 1500000,
+    quantity: 1,
+    image:
+      "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/PDP-Highlight-Consumer-Laptop-5-Platinum-001-1:VP1-539x440",
+  },
 ];
