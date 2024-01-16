@@ -1,7 +1,17 @@
 import { useEffect, useState } from "react";
 
 import { productOnCart } from "@/dummyData/Product";
-import { Button, Image, Input, Table, TableBody, TableCell, TableColumn, TableHeader, TableRow } from "@nextui-org/react";
+import {
+  Button,
+  Image,
+  Input,
+  Table,
+  TableBody,
+  TableCell,
+  TableColumn,
+  TableHeader,
+  TableRow,
+} from "@nextui-org/react";
 
 export interface CartType {
   id: number;
@@ -36,16 +46,16 @@ const CartPage = () => {
 
   const [discountCode, setDiscountCode] = useState("");
 
-  const handleDiscountCodeChange = (e) => {
+  const handleDiscountCodeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setDiscountCode(e.target.value);
   };
 
   const handleApplyDiscount = () => {
-    // !TODO: xử lý khi người dùng nhập mã giảm giá  
+    // !TODO: xử lý khi người dùng nhập mã giảm giá
   };
 
   const handleContinue = () => {
-    // !TODO: chuyển sang màn order 
+    // !TODO: chuyển sang màn order
   };
 
   const getCount = () => {
