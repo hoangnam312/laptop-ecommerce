@@ -2,6 +2,7 @@ import { faApple } from "@fortawesome/free-brands-svg-icons";
 import {
   faBriefcase,
   faFeather,
+  faFileWord,
   faGamepad,
   faHeadphonesSimple,
   faPalette,
@@ -23,6 +24,7 @@ export enum PATH {
   GAMING = "/category/gaming",
   MACBOOK = "/category/macbook",
   ACCESSORIES = "/category/accessories",
+  OFFICE = "/category/office",
   HOME = "/",
   DETAIL = "/detail",
   CART = "/cart",
@@ -39,6 +41,11 @@ export const CATEGORIES = [
     title: "Doanh nhân",
     icon: faBriefcase,
     link: PATH.BUSINESS,
+  },
+  {
+    title: "Văn phòng",
+    icon: faFileWord,
+    link: PATH.OFFICE
   },
   {
     title: "Mỏng nhẹ",
@@ -59,7 +66,7 @@ export const CATEGORIES = [
     title: "Phụ kiện",
     icon: faHeadphonesSimple,
     link: PATH.ACCESSORIES,
-  },
+  }
 ];
 
 export const INFORMATION = {
